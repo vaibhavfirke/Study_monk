@@ -18,8 +18,10 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">contact</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
+                <li id="L_name"><a href="login.html">Login</a></li>
+                <li id="S_name"><a href="register.html">Register</a></li>
+                <li id="profile"><i class="fa-solid fa-user" style="color: #ffffff;"></i> <span id="text">profile</span></li>
+               
 
             </ul>
         </div>
@@ -31,9 +33,26 @@
             <h1>Hire Smart and Scale Faster</h1>
             <h3>300+ startups trust DreamHire to scale there business</h3>
             <div id="searchInput">
-                <input type="text" placeholder="Keyword">
-
-                <select>
+                
+                <select id="keyword">
+                    <option value="">Select a Profession</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="engineer">Engineer</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="designer">Designer</option>
+                    <option value="nurse">Nurse</option>
+                    <option value="developer">Developer</option>
+                    <option value="lawyer">Lawyer</option>
+                    <option value="architect">Architect</option>
+                    <option value="writer">Writer</option>
+                    <option value="chef">Chef</option>
+                    <option value="musician">Musician</option>
+                    <option value="artist">Artist</option>
+                    <option value="pilot">Pilot</option>
+                    <option value="scientist">Scientist</option>
+                    
+                  </select>
+                <select id="city">
                     <option value="">Select a city</option>
                     <option value="delhi">Delhi</option>
                     <option value="mumbai">Mumbai</option>
@@ -46,7 +65,7 @@
                     <option value="jaipur">Jaipur</option>
                 </select>
 
-                <button>Find Tallant</button>
+                <button id="find">Find Tallant</button>
             </div>
         </div>
     </div>
@@ -203,3 +222,5 @@
 </body>
 
 </html>
+<script src="https://kit.fontawesome.com/7852786c75.js" crossorigin="anonymous"></script>
+<script src="./jsFile/index.js"></script>

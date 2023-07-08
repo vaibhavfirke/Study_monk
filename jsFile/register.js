@@ -49,7 +49,8 @@ function submit(){
       }else{
         user.push(info)
         localStorage.setItem("userInfo",JSON.stringify(user));
-        alert("User Register Sucessfull !")
+        alert("User Register Sucessfull !");
+        window.location.href="login.html"
       }
     }
     

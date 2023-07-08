@@ -50,9 +50,11 @@ a {
 }
 a:hover{
     
-    color: greenyellow;
+    color:rgb(239, 189, 7);
 }
-
+#profile{
+    display: none;
+}
 /* below part are hero section  */
 
 .Hero{
