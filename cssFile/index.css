@@ -1,0 +1,303 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+#Header {
+    width: 100%;
+    box-sizing: border-box;
+    height: 70px;
+    position: fixed;
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.logo {
+    margin-left: 8%;
+
+}
+
+.logo h1 {
+    color: rgb(239, 189, 7);
+}
+
+.nav {
+
+    width: 30%;
+    margin-right: 8%;
+}
+
+.nav ul {
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+
+}
+
+.nav ul>li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+a:hover{
+    
+    color: greenyellow;
+}
+
+/* below part are hero section  */
+
+.Hero{
+    width: 100%;
+    margin: auto;
+    
+    
+}
+.Hero>img{
+    filter: blur(3px);
+    width: 100%;
+    height: 90vh;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(10, 9, 9, 0.5); 
+  }
+#search{
+    color: rgba(248, 240, 240, 0.861);
+    position:absolute;
+    top: 230px;
+    left: 21%;
+    text-align: center;
+}
+#search h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+#search h3{
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+#searchInput{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+  
+}
+#searchInput input,#searchInput select{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 50vh;
+    padding: 10px;
+    box-sizing: border-box;
+    /* border-radius: 3px 0px 0px 3px; */
+    font-size: 18px;
+    display: block;
+    border-right: 2px solid rgb(239, 189, 7);
+}
+#searchInput button{
+    display: block;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 40px;
+    background: rgb(239, 189, 7);
+    color: rgb(7, 7, 7);
+    border: none;
+    /* border-radius: 8px; */
+    font-size: 16px;
+    font-weight:600;
+    cursor: pointer;
+   
+}
+/* key Features css below */
+
+#keyFeatures{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 50px;
+}
+#keyFeatures h1{
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Features{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 20px;
+}
+.points{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.points:hover{
+    border: 1px solid rgb(239, 189, 7);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.points h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.points p{
+    font-size: 17px;
+    color: #5f5959;
+}
+
+/* find css */
+
+.find{
+    margin-top: 50px;
+    display: flex;
+width: 100%;
+height: 500px;
+box-sizing: border-box;
+
+}
+.get{
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+   padding: 50px;
+   background-color: #3c99da;
+   color: white;
+  
+}
+.hire{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 50px;
+    color: white;
+    background-color: black;
+}
+.get p,.hire p{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.get button,.hire button{
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+/* testimonials */
+
+.testimonials{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+    margin-top: 30px;
+    background: #dcdbdb;
+}
+.testimonials h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.test_insight{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+.person{
+    background-color: white;
+    box-sizing: border-box;
+    padding: 50px;
+}
+.person>p{
+    font-size: 18px;
+    color: #6d6a6a;
+}
+.Person_info>div>p{
+    font-size: 16px;
+    color: rgb(156, 153, 153);
+}
+.Person_info img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    content: icon;
+    object-fit: cover;
+}
+.Person_info{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+
+}
+/* trust css  */
+
+.trust{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 50px;
+    
+
+}
+
+.comp_name{
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    margin-top: 50px;
+    background-color: white;
+   
+}
+.trust h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.comp_name img{
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+}
+/* footer css  */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  header h1, footer p {
+    margin: 0;
+    padding-left: 50px;
+  }
