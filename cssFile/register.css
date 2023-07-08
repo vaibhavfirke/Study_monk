@@ -62,7 +62,7 @@ section {
     box-sizing: border-box;
     padding: 50px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,7 +103,7 @@ section>div>h1{
     font-size: 30px;
     font-weight: bold;
 }
-#login{
+#register{
     box-sizing: border-box;
     width: 100px;
     height: 40px;
