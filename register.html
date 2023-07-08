@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./cssFile/register.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./cssFile/register.css">
 
 </head>
+
 <body>
   <header id="Header">
     <div class="logo">
-        <h1>DreamHire</h1>
+      <h1>DreamHire</h1>
     </div>
     <div class="nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">contact</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="register.html">Register</a></li>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
 
-        </ul>
+      </ul>
     </div>
-</header>
-      <section>
-        <form>
-          <label for="company">Company Name:</label>
-          <input type="text" id="company" name="company" required>
-          <br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <br>
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required>
-          <br>
-          <input type="submit" value="Register">
-        </form>
-      </section>
-      <footer>
-        <p>&copy; 2023 Recruitment Solution. All rights reserved.</p>
-      </footer>
+  </header>
+  <div style="height: 80px;"></div>
+  <section>
+    <div>
+      <h1>Sign Up</h1>
+      <div class="email_input">
+        <i class="fa-solid fa-user fa-beat-fade"></i>
+        <input type="text" id="name" placeholder="Name">
+      </div>
+      <hr />
+      <div class="email_input">
+        <i class="fa-solid fa-envelope fa-beat-fade"></i>
+        <input type="email" id="email" placeholder="Email">
+      </div>
+      <hr />
+      <div class="pass_input">
+        <i class="fa-solid fa-lock fa-beat-fade"></i>
+        <input type="password" id="password" placeholder="Password">
+      </div>
+      <hr />
+      <div class="pass_input">
+        <i class="fa-sharp fa-regular fa-lock fa-beat-fade"></i>
+        <input type="text" id="Re_password" placeholder="Repeat Your Password">
+      </div>
+      <hr />
+      <div
+        style="display: flex; width: 100%; justify-content: baseline;align-items: center; gap: 10px;margin-top: 20px;">
+        <input type="checkbox" style="width: 15px; margin: top 20px;">
+        <span>I agree all statments in terms of services</span>
+
+      </div>
+      <button id="login">Register</button>
+
+    </div>
+
+    <div id="image">
+      <img src="signin-image.jpg" alt="image">
+      <a href="login.html">I am alredy member</a>
+    </div>
+  </section>
+
+
 </body>
+
 </html>
+<script src="https://kit.fontawesome.com/7852786c75.js" crossorigin="anonymous"></script>

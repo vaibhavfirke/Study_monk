@@ -48,7 +48,70 @@ a {
     color: white;
     font-weight: bold;
 }
-a:hover{
-    
+
+a:hover {
+
     color: greenyellow;
+}
+
+/* below section login part  */
+
+section {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    width: 60%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 50px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#image a {
+    width: 100%;
+    color: rgb(75, 73, 73);
+    display: block;
+    margin-top: 30px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+input{
+    outline: none;
+    font-size: 16px;
+    width: 50vh;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+}
+.email_input,.pass_input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+hr{
+    margin-top: -0px;
+    font-weight: 900;
+}
+section>div>h1{
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#login{
+    box-sizing: border-box;
+    width: 100px;
+    height: 40px;
+   font-size: 16px;
+   font-weight: 600;
+   margin-top: 30px;
+   cursor: pointer;
+   background-color: rgb(247, 207, 50);
+   border: none;
+   border-radius: 5px;
 }
