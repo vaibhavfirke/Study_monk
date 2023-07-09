@@ -99,7 +99,7 @@ a:hover{
     box-sizing: border-box;
   
 }
-#searchInput input,#searchInput select{
+#searchInput select{
     border: none;
     outline: none;
     height: 40px;
@@ -107,7 +107,7 @@ a:hover{
     padding: 10px;
     box-sizing: border-box;
     /* border-radius: 3px 0px 0px 3px; */
-    font-size: 18px;
+    font-size: 16px;
     display: block;
     border-right: 2px solid rgb(239, 189, 7);
 }

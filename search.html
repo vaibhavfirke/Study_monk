@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./cssFile/search.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamHire</title>
+  <link rel="stylesheet" href="./cssFile/search.css">
 
 </head>
+
 <body>
   <header id="Header">
     <div class="logo">
-        <h1>DreamHire</h1>
+      <h1>DreamHire</h1>
     </div>
     <div class="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">contact</a></li>
-          <li id="L_name"><a href="login.html">Login</a></li>
-          <li id="S_name"><a href="register.html">Register</a></li>
-          <li id="profile"><i class="fa-solid fa-user" style="color: #ffffff;"></i> <span id="text">profile</span></li>
-         
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">contact</a></li>
+        <li id="L_name"><a href="login.html">Login</a></li>
+        <li id="S_name"><a href="register.html">Register</a></li>
+        <li id="profile"><i class="fa-solid fa-user" style="color: #ffffff;"></i> <span id="text">profile</span></li>
+
+      </ul>
     </div>
-</header>
-      <section>
-        <form>
-          <label for="location">Location:</label>
-          <input type="text" id="location" name="location">
-          <br>
-          <label for="job-role">Job Role:</label>
-          <input type="text" id="job-role" name="job-role">
-          <br>
-          <input type="submit" value="Search">
-        </form>
-        <h2>Search Results</h2>
-        <ul id="candidate-list">
-          <!-- Candidates will be dynamically added here -->
-        </ul>
-      </section>
-      <footer>
-        <p>&copy; 2023 Recruitment Solution. All rights reserved.</p>
-      </footer>
+  </header>
+  <div style="height: 80px;"></div>
+  <div>
+    <div id="searchInput">
+
+      <select id="keyword">
+        <option value="">Select a Profession</option>
+        <option value="Doctor">Doctor</option>
+        <option value="Engineer">Engineer</option>
+        <option value="Teacher">Teacher</option>
+        <option value="Designer">Designer</option>
+        <option value="Nurse">Nurse</option>
+        <option value="Developer">Developer</option>
+        <option value="Lawyer">Lawyer</option>
+        <option value="Architect">Architect</option>
+        <option value="Writer">Writer</option>
+        <option value="Chef">Chef</option>
+        <option value="Musician">Musician</option>
+
+
+      </select>
+      <select id="city">
+        <option value="">Select a city</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Bengaluru">Bengaluru</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+        <option value="Pune">Pune</option>
+        <option value="Jaipur">Jaipur</option>
+      </select>
+
+      <button id="find">Find Tallant</button>
+    </div>
+  </div>
+  <div id="student_data">
+    
+ 
+  </div>
 </body>
+
 </html>
 <script src="https://kit.fontawesome.com/7852786c75.js" crossorigin="anonymous"></script>
-<script src="./jsFile/index.js"></script>
+<script src="./jsFile/search.js"></script>
