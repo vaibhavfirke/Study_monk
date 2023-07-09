@@ -2002,7 +2002,13 @@ function display(Data) {
   let User = JSON.parse(localStorage.getItem("search")) || [];
   let parent = document.getElementById("student_data");
   parent.innerHTML = null;
-
+if(Data.length==0){
+  let warning=document.createElement("h2");
+  warning.setAttribute("id","warning");
+  warning.innerText="Data Not found !";
+  parent.append(warning);
+  return ;
+}
   Data.map((el) => {
     let cantaner = document.createElement("div");
     cantaner.setAttribute("id","cantaner")
